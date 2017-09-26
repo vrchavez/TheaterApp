@@ -1,0 +1,2353 @@
+﻿/*CLEAN CLEAN CLEAN*/
+@font-face {
+    font-family: Bebas;
+    src: url('/fonts/bebas-neue-light.woff2');
+}
+
+@font-face {
+    font-family: Bebas2;
+    src: url('/fonts/BebasNeue Bold.otf')
+}
+
+@font-face {
+    font-family: Din;
+    src: url('/fonts/din-condensed.otf');
+}
+
+@font-face {
+    font-family: Lato;
+    src: url('/fonts/Lato.otf');
+}
+
+/*Desktop version website height and width*/
+body {
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#top::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    bottom: 0;
+    transform-origin: left bottom;
+    transform: skewY(-3deg);
+    overflow: hidden;
+    background-image: url(https://i.imgur.com/rt66oLa.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.top-color {
+    position: absolute;
+    background-color: #c0dfd9;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .63;
+    overflow: hidden;
+    transform-origin: left bottom;
+    transform: skewY(-3deg);
+}
+
+.first-header {
+    font-family: Bebas2;
+    top: 9%;
+    letter-spacing: 1px;
+    word-spacing: 10px;
+    color: #31312d;
+    font-size: 160px;
+    font-weight: 100;
+    left: 0;
+    right: 0;
+    text-align: center;
+    position: absolute;
+    margin: 0px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.first-header2 {
+    font-family: Bebas;
+    color: #31312d;
+    font-size: 58px;
+    font-weight: 900;
+    letter-spacing: .3px;
+    left: 0;
+    right: 0;
+    top: 35%;
+    text-align: center;
+    padding: 0;
+    position: absolute;
+    margin: 0px;
+    -webkit-font-smoothing: antialiased;
+}
+
+#thirdTextCont {
+    position: absolute;
+    text-align: center;
+    margin: 0px;
+    width: 100%;
+    height: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 84%;
+}
+
+.third-text {
+    font-family: "Bebas", sans-serif;
+    z-index: 200;
+    color: #31312d;
+    font-size: 51px;
+    font-weight: 900;
+    letter-spacing: .35px;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+    .third-text span {
+        opacity: 0;
+    }
+
+.container2 {
+    display: inline-block;
+    cursor: pointer;
+    right: 32.5px;
+    top: 22px;
+    position: fixed;
+    z-index: 4000;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 47px;
+    height: 5.3px;
+    background-color: #31312d;
+    margin: 7.4px 0;
+    transition: 0.4s;
+}
+
+.container2:hover .bar1, .container2:hover .bar2, .container2:hover .bar3 {
+    background-color: #5b5b5b;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-10px, 9px);
+    transform: rotate(-45deg) translate(-10px, 9px);
+    background-color: #c1cdcb;
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+    background-color: #c1cdcb;
+}
+
+#arrow1 {
+    position: absolute;
+    top: 90%;
+    right: 3.5%;
+    font-family: 'Material Icons', sans-serif;
+    font-size: 49px;
+    text-align: center;
+    color: #31312d;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: .02s;
+    z-index: 1008;
+    -webkit-animation-name: arrowUno; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: .6s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 2; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate;
+    -webkit-animation-delay: 1.4s;
+    animation-name: arrowUno;
+    animation-duration: .6s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-delay: 1.4s;
+}
+
+@-webkit-keyframes arrowUno {
+    0% {
+        top: 88%;
+    }
+
+    100% {
+        top: 75%;
+    }
+}
+
+@keyframes arrowUno {
+    0% {
+        top: 88%;
+    }
+
+    100% {
+        top: 75%;
+    }
+}
+
+#arrow1:hover {
+    color: #5b5b5b;
+    outline: none;
+}
+
+#arrow1:active {
+    top: 89.5%;
+    outline: none;
+}
+
+.arrow {
+    position: absolute;
+    top: 90%;
+    right: 3.5%;
+    font-family: 'Material Icons', sans-serif;
+    font-size: 49px;
+    text-align: center;
+    color: #31312d;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    transition: .02s;
+    z-index: 1008;
+}
+
+    .arrow:hover {
+        color: #5b5b5b;
+        outline: none;
+    }
+
+    .arrow:active {
+        top: 89.5%;
+        outline: none;
+    }
+
+button {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+#no {
+    cursor: default;
+    outline: none;
+    border: none;
+}
+
+    #no:hover {
+        background-color: #723a44;
+    }
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #723a44;
+    width: 30%;
+    height: auto;
+    overflow: hidden;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+    top: 0;
+    z-index: 3010;
+}
+
+    .dropdown-content a {
+        color: #c1cdcb;
+        padding: 12px 16px;
+        text-decoration: none;
+        left: 0;
+        right: 0;
+        text-align: center;
+        display: block;
+        font-family: Bebas;
+        font-weight: 900;
+        font-size: 46px;
+        height: 40px;
+        z-index: 4001;
+        -webkit-font-smoothing: antialiased;
+    }
+
+        .dropdown-content a:hover {
+            color: #31312d;
+        }
+
+.show {
+    display: block;
+}
+
+#logo-click {
+    position: fixed;
+    top: 10px;
+    left: 5px;
+    height: 90px;
+    width: 115px;
+    z-index: 2000;
+}
+
+#logo-img {
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+
+.carForever {
+    position: absolute;
+    top: 54%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 110px;
+    height: 110px;
+    background-image: url(https://i.imgur.com/0hqytor.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2001;
+}
+
+.first-button-div {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 61%;
+}
+
+#first-button {
+    position: relative;
+    -webkit-appearance: none;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 300;
+    color: #dddddd;
+    font-size: 35px;
+    border-radius: 7px;
+    height: 1.6%;
+    width: auto;
+    border-color: transparent;
+    background-color: #723a44;
+    font-family: 'Bebas2', sans-serif;
+    cursor: pointer;
+    outline: none;
+    transition: .09s;
+    -webkit-font-smoothing: antialiased;
+}
+
+    #first-button:hover {
+        color: #9e9e9e;
+    }
+
+    #first-button:active {
+        box-shadow: 0 0 0 #3f2026;
+        top: 4px;
+        outline: none;
+    }
+
+.carZero {
+    position: absolute;
+    top: 81%;
+    left: -10%;
+    width: 110px;
+    height: 110px;
+    background-image: url(https://i.imgur.com/Ok7zdRt.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1005;
+    -webkit-animation-name: car; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2.8s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: .4s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: car;
+    animation-duration: 2.8s;
+    animation-iteration-count: 1;
+    animation-delay: .4s;
+    animation-fill-mode: forwards; /* http://i.imgur.com/Ok7zdRt.png */
+}
+
+@-webkit-keyframes car {
+    0% {
+        left: -10%;
+        top: 79%;
+    }
+
+    100% {
+        left: 115%;
+        top: 79%;
+    }
+}
+
+@keyframes car {
+    0% {
+        left: -10%;
+        top: 79%;
+    }
+
+    100% {
+        left: 115%;
+        top: 79%;
+    }
+}
+
+/*-----------------------------END OF FIRST PANEL--------------------------*/
+
+.second-panel {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    overflow: visible;
+}
+
+    .second-panel::after {
+        content: '';
+        top: -10.69%;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: inherit;
+        z-index: -1;
+        bottom: 0;
+        transform-origin: right top;
+        transform: skewY(-3deg);
+        overflow: visible;
+        background-image: url(https://i.imgur.com/o6tEMBR.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+.second-color {
+    position: absolute;
+    background-color: #f7f8db;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .8;
+    transform-origin: left bottom;
+    transform: skewY(-3deg);
+}
+
+
+.second-header {
+    font-family: Bebas2;
+    top: 2%;
+    color: #31312d;
+    font-size: 100px;
+    font-weight: 100;
+    left: 0;
+    right: 0;
+    text-align: center;
+    position: relative;
+    margin: 0px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.second-button-div {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 84%;
+}
+
+#second-button {
+    position: relative;
+    -webkit-appearance: none;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+    color: #dddddd;
+    z-index: 100;
+    font-size: 35px;
+    border-radius: 7px;
+    font-weight: 300;
+    height: 1.6%;
+    width: auto;
+    border-color: transparent;
+    background-color: #723a44;
+    font-family: 'Bebas2', sans-serif;
+    cursor: pointer;
+    outline: none;
+    transition: .15s;
+}
+
+    #second-button:hover {
+        color: #9e9e9e;
+        transition: .12s;
+    }
+
+    #second-button:active {
+        box-shadow: 0 0 0 #3f2026;
+        top: 4px;
+        outline: none;
+    }
+
+.step1 {
+    position: absolute;
+    left: 0;
+    right: 66.66%;
+    top: 57%;
+    text-align: center;
+    font-weight: 900;
+    margin: auto;
+    color: #31312d;
+    font-family: Bebas;
+    font-size: 41px;
+    width: 23%;
+    height: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+    .step1 #ONE {
+        font-family: Din;
+        font-weight: 200;
+        font-size: 54px;
+        left: -5px;
+        color: #31312d;
+    }
+
+#iphone {
+    position: absolute;
+    top: 28%;
+    left: 0;
+    right: 58%;
+    margin: auto;
+    text-align: center;
+    height: 175px;
+    width: 85px;
+}
+
+#galaxy {
+    position: absolute;
+    top: 28%;
+    left: 9%;
+    right: 0;
+    text-align: center;
+    height: 175px;
+    width: 85px;
+}
+
+#brokenIphone {
+    position: absolute;
+    top: 28%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    height: 175px;
+    width: 85px;
+}
+
+.step2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 57%;
+    color: #31312d;
+    margin: auto;
+    text-align: center;
+    font-family: Bebas;
+    font-size: 41px;
+    font-weight: 900;
+    width: 23%;
+    height: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+    .step2 #TWO {
+        font-family: Din;
+        font-weight: 200;
+        font-size: 54px;
+        left: -5px;
+        color: #31312d;
+    }
+
+#location {
+    position: absolute;
+    top: 28%;
+    left: 66.66%;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    height: 175px;
+    width: 85px;
+}
+
+.step3 {
+    position: absolute;
+    left: 66.66%;
+    right: 0;
+    top: 57%;
+    color: #31312d;
+    margin: auto;
+    text-align: center;
+    font-family: Bebas;
+    font-size: 41px;
+    font-weight: 900;
+    width: 23%;
+    height: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+    .step3 #THREE {
+        font-family: Din;
+        font-weight: 200;
+        font-size: 54px;
+        left: -5px;
+        color: #31312d;
+    }
+
+
+
+
+/*--------------------------END OF SECOND PANEL--------------------------*/
+
+
+.third-panel {
+    position: absolute;
+    top: 400%;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(Mapa.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+}
+
+.thirdColor {
+    position: absolute;
+    background-color: #b3c2bf;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    opacity: .64;
+}
+
+
+.third-header {
+    font-family: Bebas2;
+    top: 2%;
+    color: #31312d;
+    font-size: 100px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    position: relative;
+    margin: 0px;
+}
+
+.iphoneText {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 24.4%;
+    text-align: center;
+    margin: auto;
+    color: #31312d;
+    font-family: Din;
+    font-size: 39px;
+    font-weight: 100;
+    width: 23%;
+    height: auto;
+}
+
+#iphonePrice {
+    position: absolute;
+    top: 32%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    height: 300px;
+    width: 150px;
+}
+
+.iphoneSection {
+    position: absolute;
+    left: 0;
+    right: 66.66%;
+    top: 0;
+    bottom: 0;
+    height: auto;
+}
+
+.galaxySection {
+    position: absolute;
+    left: 33.33%;
+    right: 33.33%;
+    top: 0;
+    bottom: 0;
+    height: auto;
+}
+
+.noteSection {
+    position: absolute;
+    left: 66.66%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: auto;
+}
+
+.phoneinfo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 32%;
+    height: 320px;
+    text-align: center;
+}
+
+.p1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 5%;
+    text-align: center;
+    z-index: 200;
+    font-family: Bebas;
+    font-weight: 900;
+    font-size: 26px;
+    color: #c0dfd9;
+    text-shadow: -.30px -.30px .1px #c0dfd9, .30px -.30px .1px #c0dfd9, -.30px .30px .1px #c0dfd9, .30px .30px .1px #c0dfd9;
+}
+
+.p2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 15%;
+    text-align: center;
+    z-index: 200;
+    font-family: Bebas;
+    font-weight: 900;
+    font-size: 26px;
+    color: #c0dfd9;
+    text-shadow: -.30px -.30px .1px #c0dfd9, .30px -.30px .1px #c0dfd9, -.30px .30px .1px #c0dfd9, .30px .30px .1px #c0dfd9;
+}
+
+.p3 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25%;
+    text-align: center;
+    z-index: 200;
+    font-family: Bebas;
+    font-weight: 900;
+    font-size: 26px;
+    color: #c0dfd9;
+    text-shadow: -.30px -.30px .1px #c0dfd9, .30px -.30px .1px #c0dfd9, -.30px .30px .1px #c0dfd9, .30px .30px .1px #c0dfd9;
+}
+
+.p4 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 35%;
+    text-align: center;
+    z-index: 200;
+    font-family: Bebas;
+    font-weight: 900;
+    font-size: 26px;
+    color: #c0dfd9;
+    text-shadow: -.30px -.30px .1px #c0dfd9, .30px -.30px .1px #c0dfd9, -.30px .30px .1px #c0dfd9, .30px .30px .1px #c0dfd9;
+}
+
+.p5 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 45%;
+    text-align: center;
+    z-index: 200;
+    font-family: Bebas;
+    font-weight: 900;
+    font-size: 26px;
+    color: #c0dfd9;
+    text-shadow: -.30px -.30px .1px #c0dfd9, .30px -.30px .1px #c0dfd9, -.30px .30px .1px #c0dfd9, .30px .30px .1px #c0dfd9;
+}
+
+.p6 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 55%;
+    text-align: center;
+    z-index: 200;
+    font-family: Bebas;
+    font-weight: 900;
+    font-size: 26px;
+    color: #c0dfd9;
+    text-shadow: -.30px -.30px .1px #c0dfd9, .30px -.30px .1px #c0dfd9, -.30px .30px .1px #c0dfd9, .30px .30px .1px #c0dfd9;
+}
+
+.p7 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 65%;
+    text-align: center;
+    z-index: 200;
+    font-family: Bebas;
+    font-weight: 900;
+    font-size: 26px;
+    color: #c0dfd9;
+    text-shadow: -.30px -.30px .1px #c0dfd9, .30px -.30px .1px #c0dfd9, -.30px .30px .1px #c0dfd9, .30px .30px .1px #c0dfd9;
+}
+
+.galaxyText {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 24%;
+    color: #31312d;
+    margin: auto;
+    text-align: center;
+    font-family: Din;
+    font-size: 39px;
+    font-weight: 100;
+    width: 50%;
+    height: auto;
+}
+
+#sPrice {
+    position: absolute;
+    top: 32%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    height: 300px;
+    width: 150px;
+}
+
+.noteText {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 24%;
+    color: #31312d;
+    margin: auto;
+    text-align: center;
+    font-family: Din;
+    font-size: 39px;
+    font-weight: 100;
+    width: 40%;
+    height: auto;
+}
+
+#notePrice {
+    position: absolute;
+    top: 32%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    height: 300px;
+    width: 150px;
+}
+
+.third-button-div {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 88.7%;
+}
+
+#thirdSecBottom {
+    position: relative;
+    color: #31312d;
+    margin: auto;
+    text-align: center;
+    font-family: Din;
+    font-size: 36px;
+    font-weight: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+}
+
+#third-button {
+    position: relative;
+    -webkit-appearance: none;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+    color: #dddddd;
+    font-size: 35px;
+    border-radius: 7px;
+    height: 1.6%;
+    width: 190px;
+    border-color: transparent;
+    background-color: #723a44;
+    font-family: 'Din', sans-serif;
+    cursor: pointer;
+    outline: none;
+    font-weight: 300;
+    transition: .15s;
+}
+
+    #third-button:hover {
+        color: #9e9e9e;
+    }
+
+    #third-button:active {
+        box-shadow: 0 0 0 #3f2026;
+        top: 4px;
+        outline: none;
+    }
+
+
+/*---------------------END OF THIRD PANEL-----------------------*/
+
+
+.fourth-panel {
+    position: absolute;
+    z-index: -2;
+    top: 288%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 112%;
+    width: 100%;
+    overflow: visible;
+    background-image: url("https://i.imgur.com/tjBkJ7m.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.fourth-color {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #c0dfd9;
+    opacity: .85;
+    overflow: visible;
+}
+
+.fpCONT {
+    position: absolute;
+    top: 12%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/*#fC {
+    transform-origin: 100% 100%;
+    transform: skewY(3deg);
+}*/
+
+.fourth-header {
+    font-family: Bebas2;
+    top: 2%;
+    color: #31312d;
+    font-size: 100px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    position: relative;
+    margin: 0px;
+}
+
+form {
+    position: absolute;
+    margin: 0px;
+    top: 28%;
+    left: 0;
+    right: 0;
+    height: 60%;
+}
+
+.firstName {
+    position: absolute;
+    left: 20%;
+    right: 50%;
+    height: 70px;
+    font-family: Din;
+    font-size: 34px;
+    margin: 0px;
+    text-align: center;
+    color: #31312d;
+}
+
+.cFirst {
+    left: 10%;
+    right: 0;
+    width: 230px;
+    text-align: center;
+    display: inline-block;
+    margin: 0px;
+}
+
+.moveF {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    height: 30px;
+    width: 100%;
+}
+
+#fName {
+    outline: none;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 30px;
+    width: 210px;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    padding-left: 8px;
+    padding-right: 8px;
+    display: inline-block;
+    margin: 0px;
+    border-color: transparent;
+    border-radius: 4px;
+    color: #31312d;
+}
+
+.lastName {
+    position: absolute;
+    left: 50%;
+    right: 20%;
+    height: 70px;
+    font-family: Din;
+    font-size: 34px;
+    margin: 0px;
+    text-align: center;
+    color: #31312d;
+}
+
+.cLast {
+    left: 0;
+    right: 0;
+    width: 230px;
+    text-align: center;
+    display: inline-block;
+}
+
+.moveL {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    height: 30px;
+    width: 100%;
+}
+
+#lName {
+    outline: none;
+    color: #31312d;
+    top: 50%;
+    left: 0;
+    right: 25%;
+    height: 30px;
+    width: 210px;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin: 0px;
+    border-color: transparent;
+    border-radius: 4px;
+}
+
+#msgArea {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30%;
+    height: 60%;
+    text-align: center;
+    font-family: Din;
+    font-size: 34px;
+    color: #31312d;
+}
+
+.msgName {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    text-align: center;
+}
+
+#txtArea {
+    position: relative;
+    top: 20%;
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+    font-size: 19px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-color: transparent;
+    border-radius: 4px;
+    outline: none;
+    color: #31312d;
+}
+
+
+
+.msgBtn {
+    position: relative;
+    top: 95%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.SendBtn {
+    position: relative;
+    -webkit-appearance: none;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+    color: #dddddd;
+    font-size: 23px;
+    border-radius: 7px;
+    font-weight: 900;
+    height: 1.1%;
+    width: 140px;
+    border-color: transparent;
+    background-color: #723a44;
+    font-family: 'Bebas2', sans-serif;
+    cursor: pointer;
+    outline: none;
+    transition: .15s;
+}
+
+    .SendBtn:hover {
+        color: #9e9e9e;
+    }
+
+    .SendBtn:active {
+        box-shadow: 0 0 0 #3f2026;
+        top: 3px;
+        outline: none;
+    }
+
+#arrow4 {
+    position: absolute;
+    top: 85%;
+    right: 3.5%;
+    font-family: 'Material Icons', sans-serif;
+    font-size: 46px;
+    text-align: center;
+    color: #31312d;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    transition: .10s;
+    z-index: 1008;
+}
+
+    #arrow4:hover {
+        color: #5b5b5b;
+        outline: none;
+    }
+
+    #arrow4:active {
+        top: 82.5%;
+        outline: none;
+    }
+
+.footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+    margin: 0px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.botRight {
+    position: absolute;
+    right: 2%;
+    bottom: 25%;
+    height: 30px;
+    font-family: Din;
+    font-size: 15px;
+    color: #31312d;
+}
+
+    .botRight p a {
+        text-decoration: none;
+        color: #31312d;
+    }
+
+.botLeft {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: 25%;
+    height: 30px;
+    font-family: Din;
+    font-size: 15px;
+    color: #31312d;
+}
+
+.number {
+    position: absolute;
+    left: 2%;
+    bottom: 43%;
+    height: 30px;
+    font-family: Din;
+    font-size: 18px;
+    color: #31312d;
+}
+
+/*----------------- End of Fourth Panel-----------------*/
+
+
+.fifth-panel {
+    position: absolute;
+    top: 200%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    overflow: visible;
+}
+
+    .fifth-panel::after {
+        content: '';
+        top: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: inherit;
+        z-index: -1;
+        bottom: 0;
+        transform-origin: 0% 0%;
+        transform: skewY(-3deg);
+        background-image: url(https://i.imgur.com/mjKrbn5.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+.fifth-color {
+    position: absolute;
+    background-color: #b3c2bf;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .89;
+    transform-origin: 0% 0%;
+    transform: skewY(-3deg);
+}
+
+.container4Pointers {
+    overflow: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.fifth-header {
+    font-family: Bebas2;
+    top: 2%;
+    color: #31312d;
+    font-size: 100px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    position: relative;
+    margin: 0px;
+    z-index: 1000;
+}
+
+#iPhRep {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -100%;
+    margin: 0 auto;
+    height: 65%;
+    width: 17%;
+    transition: .75s ease-in-out;
+    z-index: 0;
+}
+
+
+#circle8 {
+    position: absolute;
+    top: 87%;
+    right: 45%;
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    background-color: #723a44;
+}
+
+
+#jackT {
+    position: absolute;
+    font-family: Bebas;
+    font-weight: 700;
+    font-size: 45px;
+    color: #31312d;
+    top: 11%;
+    left: -100%;
+    transition: 1.15s ease-in;
+}
+
+#jackL {
+    position: absolute;
+    width: 18%;
+    height: 2px;
+    background-color: #31312d;
+    border: none;
+    left: 28%;
+    bottom: -100%;
+    transform: rotate(5.5deg);
+    transition: .8s ease-in;
+}
+
+/*HeadphoneJack*/
+#circle {
+    position: absolute;
+    bottom: -100%;
+    left: 44%;
+    width: 30px;
+    height: 30px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    background-color: #723a44;
+    transition: 1s ease-in;
+}
+
+#volT {
+    position: absolute;
+    font-weight: 700;
+    font-family: Bebas;
+    font-size: 45px;
+    color: #31312d;
+    top: 31%;
+    left: -100%;
+    transition: 1.2s ease-in;
+}
+
+#volL {
+    position: absolute;
+    width: 17.5%;
+    height: 2px;
+    background-color: #31312d;
+    border: none;
+    left: 24%;
+    bottom: -100%;
+    transform: rotate(2deg);
+    transition: .7s ease-in;
+}
+
+/*Volume*/
+#circleDos {
+    position: absolute;
+    left: 40.5%;
+    width: 30px;
+    height: 30px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    background-color: #723a44;
+    bottom: -100%;
+    transition: 1.05s ease-in;
+}
+
+#scrT {
+    position: absolute;
+    font-weight: 700;
+    font-family: Bebas;
+    font-size: 45px;
+    color: #31312d;
+    top: 51%;
+    left: -100%;
+    transition: 1.1s ease-in;
+}
+
+#scrL {
+    position: absolute;
+    width: 20%;
+    height: 2px;
+    background-color: #31312d;
+    border: none;
+    left: 29.7%;
+    bottom: -100%;
+    transform: rotate(-4.2deg);
+    transition: .9s ease-in;
+}
+
+/*Screen*/
+#circleCinco {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    background-color: #723a44;
+    transition: 1.12s ease-in;
+}
+
+#charT {
+    position: absolute;
+    font-weight: 700;
+    font-family: Bebas;
+    font-size: 45px;
+    color: #31312d;
+    top: 71%;
+    left: -100%;
+    transition-delay: .3s;
+    transition: 1.2s ease-in;
+}
+
+#charL {
+    position: absolute;
+    width: 26%;
+    height: 2px;
+    background-color: #31312d;
+    border: none;
+    left: 25%;
+    bottom: -100%;
+    transform: rotate(9deg);
+    transition: .85s ease-in;
+}
+
+/*Charger*/
+#circleSiete {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    background-color: #723a44;
+    transition: 1.25s ease-in;
+}
+
+#camT {
+    position: absolute;
+    font-weight: 700;
+    font-family: Bebas;
+    font-size: 45px;
+    color: #31312d;
+    top: 11%;
+    right: -100%;
+    transition: 1.2s ease-in;
+}
+
+#camL {
+    position: absolute;
+    width: 21%;
+    height: 2px;
+    background-color: #31312d;
+    border: none;
+    right: 30%;
+    bottom: -100%;
+    transform: rotate(-10deg);
+    transition: .9s ease-in;
+}
+
+/*Speaker & Camera*/
+#circleSeis {
+    position: absolute;
+    bottom: -100%;
+    left: 48%;
+    width: 30px;
+    height: 30px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    background-color: #723a44;
+    transition: 1.05s ease-in;
+}
+
+#locT {
+    position: absolute;
+    font-weight: 700;
+    font-family: Bebas;
+    font-size: 45px;
+    color: #31312d;
+    top: 31%;
+    right: -100%;
+    transition: 1.14s ease-in;
+}
+
+#locL {
+    position: absolute;
+    width: 23%;
+    height: 2px;
+    background-color: #31312d;
+    border: none;
+    right: 19.5%;
+    bottom: -100%;
+    transform: rotate(1deg);
+    transition: .8s ease-in;
+}
+
+/*LockButton*/
+#circleTres {
+    position: absolute;
+    bottom: -100%;
+    left: 57%;
+    width: 30px;
+    height: 30px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    background-color: #723a44;
+    transition: 1s ease-in;
+}
+
+#homT {
+    position: absolute;
+    font-weight: 700;
+    font-family: Bebas;
+    font-size: 45px;
+    color: #31312d;
+    top: 51%;
+    right: -100%;
+    transition: 1.21s ease-in;
+}
+
+#homL {
+    position: absolute;
+    width: 30%;
+    height: 2px;
+    background-color: #31312d;
+    border: none;
+    right: 21%;
+    bottom: -100%;
+    transform: rotate(-21deg);
+    transition: .85s ease-in;
+}
+
+/*HomeButton*/
+#circleQuatro {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    background-color: #723a44;
+    transition: 1.1s ease-in;
+}
+
+.batT {
+    position: absolute;
+    font-weight: 700;
+    font-family: Bebas;
+    font-size: 45px;
+    color: #31312d;
+    top: 76%;
+    right: 9%;
+}
+
+#last-button {
+    position: relative;
+    -webkit-appearance: none;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+    color: #dddddd;
+    font-size: 35px;
+    border-radius: 7px;
+    font-weight: 300;
+    height: 1.6%;
+    width: auto;
+    border-color: transparent;
+    background-color: #723a44;
+    font-family: 'Bebas2', sans-serif;
+    cursor: pointer;
+    outline: none;
+    transition: .15s;
+    -webkit-animation-name: wiggle; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 7s;
+    animation-name: wiggle;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    85% {
+        transform: rotate(0deg);
+    }
+
+    90% {
+        transform: rotate(5deg);
+    }
+
+    95% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#last-button:hover {
+    color: #9e9e9e;
+    transition: .12s;
+}
+
+#last-button:active {
+    box-shadow: 0 0 0 #3f2026;
+    top: 4px;
+    outline: none;
+}
+/*For Mobile Site. Reads width of monitor size and
+switches to mobile styling of site.*/
+@media all and (max-width: 1024px) {
+    /*Mobile version website height and width*/
+    body {
+        background-color: #f7f7f7;
+        overflow: visible;
+        height: 4035px;
+        width: 100%;
+        top: 0;
+    }
+    /*Wraps around, is same height and width, changes on Desktop Version of site*/
+    .wrapper {
+        top: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        height: 4035px;
+        width: 100%;
+    }
+
+    /*Height and width of image on top of Mobile site*/
+    .top {
+        position: absolute;
+        height: 200px;
+        top: 0;
+    }
+
+    /*Wraps arond menu, for both Mobile and Desktop site*/
+    .menuwrap {
+        transform: translate3d(0px,0px,0px);
+        position: absolute;
+        width: 100%;
+        overflow: visible;
+        left: 0;
+        right: 0;
+        opacity: 1;
+        top: 200px;
+        height: 50px;
+        z-index: 6000;
+    }
+
+    /*This is used with the Java script in order to make the Menu
+  positioning Fixed on both Desktop and Mobile*/
+    .fixed {
+        position: fixed;
+        overflow: visible;
+        height: 50px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 0;
+        opacity: 1;
+        z-index: 6000;
+    }
+
+    /*Container/Link for Logo Image*/
+    #alm {
+        position: absolute;
+        height: 50px;
+        top: 0;
+        left: 7px;
+    }
+
+    /*Defining container for Logo Image*/
+    #alm2 {
+        height: 50px;
+        width: 50px;
+    }
+
+    /*Hides the original texts from Desktop Version of Menu*/
+    .texts {
+        position: absolute;
+        display: none;
+    }
+
+    /*Makes Mobile Version of Menu visible*/
+    .littleme {
+        display: initial;
+        left: 90px;
+        right: 0;
+        z-index: 7000;
+        height: 50px;
+        overflow: visible;
+        background-color: black;
+        opacity: 1;
+    }
+
+    .littleme {
+        margin: 0;
+    }
+
+    .toggle + a,
+    .othermenu {
+        display: none;
+    }
+
+    /*Used a Character Font to make the Menu Icon. 
+  It was the most effecient way to get to what I needed.
+  This styles the Menu Icon*/
+    .toggle {
+        display: block;
+        text-align: right;
+        background-color: black;
+        opacity: 1;
+        top: 3px;
+        position: relative;
+        right: 5px;
+        color: #FFFFFF;
+        font-size: 48px;
+        font-weight: 100;
+        line-height: 45px;
+        text-decoration: none;
+        font-family: 'Material Icons', sans-serif;
+        z-index: 7000;
+    }
+
+    /*Makes Menu Icon Site green after getting clicked*/
+    #drop:checked + label {
+        color: #008080;
+    }
+
+    /*Displays Dropdown Menu after Menu Icon is clicked*/
+    [id^=drop]:checked + label + ul {
+        display: block;
+    }
+
+    .littleme ul li {
+        display: block;
+        width: 100%;
+        z-index: 6000;
+        border: none;
+    }
+
+    /*Section holding Intro + Screen Repair and Pricing*/
+    .phones {
+        top: 290px;
+        left: 0;
+        right: 0;
+        height: 45px;
+        overflow: visible;
+        position: absolute;
+    }
+
+        .phones #services {
+            position: absolute;
+            font-family: 'Oswald', sans-serif;
+            top: -15px;
+            left: 0;
+            right: 0;
+            font-size: 30px;
+            font-weight: 300;
+            color: #000000;
+        }
+
+        .phones #servicestwo {
+            text-align: center;
+            position: absolute;
+            font-family: 'Roboto', sans-serif;
+            top: 30px;
+            left: 0;
+            right: 0;
+            font-size: 25px;
+            font-weight: 300;
+            color: #008080;
+        }
+
+        .phones #under {
+            position: absolute;
+            font-family: 'Roboto condensed', sans-serif;
+            top: 50px;
+            left: 0;
+            right: 0;
+            font-size: 15px;
+            color: #000000;
+        }
+
+    /*First square of text*/
+    .textsquare {
+        position: absolute;
+        left: 5%;
+        top: 60px;
+        right: 5%;
+        height: 500px;
+    }
+
+    /*Hides square with image in it*/
+    #littlesquare {
+        position: absolute;
+        display: none;
+    }
+
+    /*General seperating lines*/
+    hr {
+        color: #808080;
+        background-color: #808080;
+        width: 80%;
+        left: 0;
+        right: 0;
+        height: 1px;
+        text-align: center;
+    }
+
+    #lineone {
+        position: absolute;
+        top: 570px;
+        text-align: center;
+    }
+
+    /*Section holding phone images + pricing. Bootstrap used here*/
+    .container {
+        height: 45px;
+        top: 500px;
+        left: 0;
+        right: 0;
+        overflow: visible;
+        position: absolute;
+        z-index: 5000;
+    }
+
+    .phones #broke {
+        position: absolute;
+        font-family: 'Oswald', sans-serif;
+        top: 660px;
+        left: 5px;
+        right: 5px;
+        font-size: 30px;
+        font-weight: 100;
+        color: #000000;
+    }
+
+    .thumbnail {
+        background-color: transparent;
+    }
+
+    /*Reposition Column (Bootstrap)*/
+    #col1 {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 270px;
+    }
+
+    /*All the p(number) from here on style the text inside the iphone image*/
+    .thumbnail #p1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        top: -260px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-weight: 100;
+        position: relative;
+        color: #FFFFFF;
+        width: 200px;
+    }
+
+    .thumbnail #p2 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        top: -264px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-weight: 100;
+        position: relative;
+        color: #FFFFFF;
+        width: 200px;
+    }
+
+    .thumbnail #p3 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        top: -268px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-weight: 100;
+        position: relative;
+        color: #FFFFFF;
+        width: 200px;
+    }
+
+    .thumbnail #p4 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        top: -272px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-weight: 100;
+        position: relative;
+        color: #FFFFFF;
+        width: 200px;
+    }
+
+    .thumbnail #p5 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        top: -275px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-weight: 100;
+        position: relative;
+        color: #FFFFFF;
+        width: 200px;
+    }
+
+    .thumbnail #p6 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        top: -278px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-weight: 100;
+        position: relative;
+        color: #FFFFFF;
+        width: 200px;
+    }
+
+    .thumbnail #p7 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        top: -282px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-weight: 100;
+        position: relative;
+        color: #FFFFFF;
+        width: 200px;
+    }
+
+    .thumbnail #p8 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        top: -286px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-weight: 100;
+        position: relative;
+        color: #FFFFFF;
+        width: 200px;
+    }
+
+    .thumbnail #p9 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        top: -290px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-weight: 100;
+        position: relative;
+        color: #FFFFFF;
+        width: 200px;
+    }
+
+    /*Reposition Second Column (Bootstrap)*/
+    #col2 {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 850px;
+    }
+
+    /*All the s(number) from here on style the text inside the GalaxyS image*/
+    .thumbnail #s1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        top: -260px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-weight: 100;
+        position: relative;
+        color: #FFFFFF;
+        width: 200px;
+    }
+
+    .thumbnail #s2 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        top: -260px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-weight: 100;
+        position: relative;
+        color: #FFFFFF;
+        width: 200px;
+    }
+
+    .thumbnail #s3 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        top: -260px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-weight: 100;
+        position: relative;
+        color: #FFFFFF;
+        width: 200px;
+    }
+
+    .thumbnail #s4 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        top: -260px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-weight: 100;
+        position: relative;
+        color: #FFFFFF;
+        width: 200px;
+    }
+
+    .thumbnail #s5 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        top: -260px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-weight: 100;
+        position: relative;
+        color: #FFFFFF;
+        width: 200px;
+    }
+
+    /*Reposition Third Column (Bootstrap)*/
+    #col3 {
+        position: absolute;
+        top: 1430px;
+        left: 0;
+        right: 0;
+    }
+
+    /*All the s(number) from here on style the text inside the GalaxyNote image*/
+    .thumbnail #n1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        top: -260px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-weight: 100;
+        position: relative;
+        color: #FFFFFF;
+        width: 200px;
+    }
+
+    .thumbnail #n2 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        top: -260px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-weight: 100;
+        position: relative;
+        color: #FFFFFF;
+        width: 200px;
+    }
+
+    .thumbnail #n3 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        top: -260px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-weight: 100;
+        position: relative;
+        color: #FFFFFF;
+        width: 200px;
+    }
+
+    .thumbnail #n4 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        top: -260px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-weight: 100;
+        position: relative;
+        color: #FFFFFF;
+        width: 200px;
+    }
+
+    .thumbnail #n5 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        top: -260px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-weight: 100;
+        position: relative;
+        color: #FFFFFF;
+        width: 200px;
+    }
+
+    .thumbnail #n6 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        top: -260px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-weight: 100;
+        position: relative;
+        color: #FFFFFF;
+        width: 200px;
+    }
+
+    /*Styles text in .checkser*/
+    #please {
+        position: absolute;
+        font-family: 'Roboto', sans-serif;
+        top: 790px;
+        left: 5%;
+        right: 5%;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 200;
+        color: #008080;
+    }
+
+    /*Makes "SERVICES" clickable inside #please*/
+    #insert {
+        position: relative;
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+        font-weight: 200;
+        color: #008080;
+        text-decoration: none;
+    }
+
+    #linetwo {
+        position: absolute;
+        top: 2920px;
+    }
+
+    #linethree {
+        position: absolute;
+        top: 3480px;
+        text-align: center;
+    }
+
+    #linefour {
+        position: absolute;
+        top: 3930px;
+    }
+
+    #linefive {
+        position: absolute;
+        top: 4010px;
+        text-align: center;
+        width: 100%;
+        left: 0;
+        right: 0;
+        height: 2px;
+    }
+
+    /*30Day Guarantee Section*/
+    .theguaran {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 3000px;
+    }
+
+    /*Styles 30Day Guarantee header Text*/
+    #guaran {
+        position: absolute;
+        font-family: 'Oswald', sans-serif;
+        font-size: 30px;
+        top: 10px;
+        text-align: center;
+    }
+
+    /*Text box for Guarantee section*/
+    .realguaran {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+    }
+
+    /*Styles text in Guarantee Section*/
+    #moreguaran {
+        position: absolute;
+        top: 40px;
+        font-family: 'Roboto condensed', sans-serif;
+        font-size: 15px;
+        color: #000000;
+        left: 5%;
+        right: 5%;
+    }
+
+    /*Hides picture for Guarantee Section*/
+    #picforguar {
+        position: absolute;
+        display: none;
+    }
+
+    /*Safety Section*/
+    .safetysec {
+        position: absolute;
+        top: 3550px;
+        overflow: hidden;
+    }
+
+    /*Styles Safety Section Header Text*/
+    #safefirst {
+        font-family: 'Oswald', sans-serif;
+        font-size: 30px;
+        top: 25px;
+        left: 2px;
+        right: 2px;
+        text-align: center;
+    }
+
+    /*Section for Text in Safety Section*/
+    #safetybox {
+        position: absolute;
+        left: 5%;
+        right: 5%;
+    }
+
+    /*Styles Text in #safetybox*/
+    #safetext {
+        position: absolute;
+        font-family: 'Roboto condensed', sans-serif;
+        font-size: 15px;
+        color: #000000;
+        top: -20px;
+        left: 2px;
+        right: 2px;
+    }
+
+    /*Hides picture for Safety section*/
+    #safepic {
+        position: absolute;
+        display: none;
+    }
+
+    /*Hides footer*/
+    .jumbotron2 {
+        display: none;
+    }
+}

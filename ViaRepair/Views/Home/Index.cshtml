@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.9.1/sweetalert2.css" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        @section scripts{
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.9.1/sweetalert2.js"></script>
+            <script src="~/Scripts/crudController.js"></script>
+
+        }
+        <style type="text/css">
+            .image-container {
+                width: 250px;
+                margin-top: 30px;
+            }
+
+            .image {
+                border: 2px solid #aaa;
+                text-align: center;
+                width: 250px;
+            }
+
+            .file-name {
+                font-family: Arial;
+            }
+
+            .textarea {
+                border: 2px dashed #ddd;
+                width: 250px;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+
+            .remove {
+                float: right;
+                color: green;
+            }
+
+                .remove:hover {
+                    color: red;
+                    cursor: pointer;
+                    font-size: 16px;
+                }
+        </style>
+
+        <link href="~/Content/bootstrap.css" rel="stylesheet" />
+
+    </head>
+    <body>
+        <div class="container" ng-app="crudApp">
+            <div class="container" ng-controller="crudController as crudVm">
+                <div class="col-md-6">
+                    <div class="card list-group lg-odd-black">
+                        <div class="card-header action-header clearfix bgm-blue">
+                            <div class="ah-label hidden-xs">
+                                <h2>List of Theaters</h2>
+                            </div>
+                            <a class="pull-right" style="cursor:pointer; color: green; font-size: 15px;" ng-click="crudVm.createNew()">Create New Theater  +</a>
+                            <div class="ah-search">
+                                <input type="text" placeholder="Start typing..." class="ahs-input" data-ng-model="search">
+                                <i class="ahs-close" ng-click="crudVm.renew()" data-ma-action="action-header-close">&times;</i>
+                            </div>
+                        </div>
+                        <div class="list-group-item media" ng-repeat="x in crudVm.currentItems | filter:search">
+                            <div class="media-body">
+                                <div class="lgi-heading">{{x.FullName}}<span class="pull-right"  ng-click="crudVm.select(x, $index)"><i class="material-icons" style="font-size: 15px;color: green;cursor: pointer;">&nbsp;&nbsp;&nbsp;&#xE254;</i></span><span ng-click="crudVm.delete(x.Id)" style="color: red; cursor: pointer;" class="pull-right">X</span></div>
+                            </div>
+                        </div>
+                        <ul class="pagination lg-pagination" total-items="totalItems"
+                            items-per-page="itemsPerPage" ng-model="crudVm.currentPage">
+                            <li>
+                                <a ng-click="crudVm.minusOne()" aria-label="Previous">
+                                    <i class="zmdi zmdi-chevron-left"><</i>
+                                </a>
+                            </li>
+                            <li ng-class="{'active' : 1 == crudVm.currentPage}" class="active" ng-click="(crudVm.currentPage = 1); crudVm.pagination(crudVm.items, crudVm.currentPage, crudVm.itemsPerPage)"><a>1</a></li>
+                            <li ng-repeat="y in crudVm.numberOfPages" ng-class="{'active' : y == crudVm.currentPage}" ng-click="(crudVm.currentPage = y); crudVm.pagination(crudVm.items, crudVm.currentPage, crudVm.itemsPerPage)"><a>{{y}}</a></li>
+                            <li>
+                                <a ng-click="crudVm.plusOne()" aria-label="Next">
+                                    <i class="zmdi zmdi-chevron-right">></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6" ng-show="crudVm.showIt">
+                    <div class="card">
+                        <form class="form-horizontal" name="crudVm.editForm" role="form" novalidate>
+                            <div class="card-header bgm-blue">
+                                <h2>Create / Edit Theater</h2>
+                            </div>
+                            <div class="card-body card-padding">
+                                <div class="form-group" ng-class="{'has-error' : crudVm.hasValidationError('name')}">
+                                    <div class="fg-line">
+                                        <label class="fg-label">Full Name</label>
+                                        <input type="text" name="name" placeholder="Theater 788" data-ng-class="{'fg-toggled': crudVm.items}"
+                                               ng-model="crudVm.item.FullName" class="form-control fg-input" required>
+                                    </div>
+                                    <span ng-show="crudVm.showValidationError('name','required')"
+                                          class="help-block">Name is required</span>
+                                </div>
+                                <div class="form-group" ng-class="{'has-error' : crudVm.hasValidationError('duration')}">
+                                    <div class="fg-line">
+                                        <label class="fg-label">Address</label>
+                                        <input type="text" name="duration" placeholder="11111 Barber St." data-ng-class="{'fg-toggled': crudVm.items}"
+                                               ng-model="crudVm.item.Address" class="form-control fg-input" min="0" required>
+                                    </div>
+                                    <span ng-show="crudVm.showValidationError('duration','required')"
+                                          class="help-block">Duration is required</span>
+                                </div>
+                                <div class="form-group">
+                                    <div class="fg-line">
+                                        <label class="fg-label">Phone Number</label>
+                                        <input type="text" name="materials" placeholder="(123) 456-7891" data-ng-class="{'fg-toggled': crudVm.items}"
+                                               ng-model="crudVm.item.Phone" class="form-control fg-input">
+                                    </div>
+                                </div>
+
+                                <div class="form-group text-center">
+                                    <!--<button ng-show="crudVm.isNew" type="button" class="btn btn-primary waves-effect btn-md" ng-click="crudVm.upload()">Upload</button>-->
+                                    <button ng-show="crudVm.isNew" ng-click="crudVm.request()" class="btn btn-primary waves-effect btn-md">SUBMIT</button>
+                                    <button ng-show="crudVm.isUpdate" ng-click="crudVm.request()" class="btn btn-warning waves-effect btn-md">UPDATE</button>
+                                    <button type="button" ng-click="crudVm.cancel()" class="btn btn-default waves-effect btn-md">CANCEL</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+
+
