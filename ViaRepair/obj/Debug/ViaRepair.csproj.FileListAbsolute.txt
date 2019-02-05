@@ -47,3 +47,4 @@ C:\Users\vrcha\OneDrive\Documents\Visual Studio 2017\Projects\ViaRepair\ViaRepai
 C:\Users\vrcha\OneDrive\Documents\Visual Studio 2017\Projects\ViaRepair\ViaRepair\bin\HtmlAgilityPack.dll
 C:\Users\vrcha\OneDrive\Documents\Visual Studio 2017\Projects\ViaRepair\ViaRepair\bin\HtmlAgilityPack.pdb
 C:\Users\vrcha\OneDrive\Documents\Visual Studio 2017\Projects\ViaRepair\ViaRepair\bin\HtmlAgilityPack.xml
+C:\Users\vrcha\OneDrive\Documents\Visual Studio 2017\Projects\ViaRepair\ViaRepair\obj\Debug\ViaRepair.csproj.CoreCompileInputs.cache

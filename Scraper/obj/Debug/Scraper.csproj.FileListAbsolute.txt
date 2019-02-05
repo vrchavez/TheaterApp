@@ -41,3 +41,4 @@ C:\Users\vrcha\OneDrive\Documents\Visual Studio 2017\Projects\ViaRepair\Scraper\
 C:\Users\vrcha\OneDrive\Documents\Visual Studio 2017\Projects\ViaRepair\Scraper\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
 C:\Users\vrcha\OneDrive\Documents\Visual Studio 2017\Projects\ViaRepair\Scraper\bin\Debug\Microsoft.Practices.ServiceLocation.xml
 C:\Users\vrcha\OneDrive\Documents\Visual Studio 2017\Projects\ViaRepair\Scraper\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\vrcha\OneDrive\Documents\Visual Studio 2017\Projects\ViaRepair\Scraper\obj\Debug\Scraper.csproj.CoreCompileInputs.cache

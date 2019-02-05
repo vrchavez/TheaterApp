@@ -3,3 +3,4 @@ C:\Users\vrcha\OneDrive\Documents\Visual Studio 2017\Projects\ViaRepair\Models\b
 C:\Users\vrcha\OneDrive\Documents\Visual Studio 2017\Projects\ViaRepair\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
 C:\Users\vrcha\OneDrive\Documents\Visual Studio 2017\Projects\ViaRepair\Models\obj\Debug\Models.dll
 C:\Users\vrcha\OneDrive\Documents\Visual Studio 2017\Projects\ViaRepair\Models\obj\Debug\Models.pdb
+C:\Users\vrcha\OneDrive\Documents\Visual Studio 2017\Projects\ViaRepair\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache

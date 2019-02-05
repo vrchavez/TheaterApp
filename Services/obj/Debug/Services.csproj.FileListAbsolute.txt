@@ -5,3 +5,4 @@ C:\Users\vrcha\OneDrive\Documents\Visual Studio 2017\Projects\ViaRepair\Services
 C:\Users\vrcha\OneDrive\Documents\Visual Studio 2017\Projects\ViaRepair\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache
 C:\Users\vrcha\OneDrive\Documents\Visual Studio 2017\Projects\ViaRepair\Services\obj\Debug\Services.dll
 C:\Users\vrcha\OneDrive\Documents\Visual Studio 2017\Projects\ViaRepair\Services\obj\Debug\Services.pdb
+C:\Users\vrcha\OneDrive\Documents\Visual Studio 2017\Projects\ViaRepair\Services\obj\Debug\Services.csproj.CoreCompileInputs.cache
